@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos Reto</title>
+</head>
+<body>
+    
+    <header>
+        <h1>
+        Porcentajes descuentos y cupones "Reto"
+        </h1>
+
+        <p>Este es un reto a cumplir del segundo taller, del curso Práctico de JavaScript</p>
+    </header>
+
+    <section>
+
+        <h2>Calcula el precio a pagar de tus productos con descuento y cupones</h2>
+
+        <form>
+
+            <label for="inputPrice">Ingresa el precio de tu producto</label>
+            <input id="inputPrice" name="Precio" type="number">
+            
+            <br>
+            
+            <label for="inputDiscount">Selecciona el porcentaje de descuento</label>
+                <select name="Descuentos" id="inputDiscount">
+                    <option value="0">0%</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="15">20%</option>
+
+                </select>
+            <br>
+            <label for="inputCoupons">Selecciona el tipo de cupon</label>
+                <select name="Cupones" id="inputCoupons">
+                    <option >Ninguno</option>
+                    <option >Bronce</option>
+                    <option >Plata</option>
+                    <option >Oro</option>
+
+                </select>
+
+         <!--    <label for="inputCupons">Ingresa la cantidad de cupones que posees</label>
+            <input type="number" name="Cupones" id="inputCupons" style="width: 60px;"> -->
+
+            <button type="button" onclick="buttonPriceDiscount()">
+                Calcular
+            </button>
+
+        </form>
+        <p id="ResultP"></p>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
